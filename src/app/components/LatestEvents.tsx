@@ -22,7 +22,7 @@ const LatestEvents = ({ events }: LatestEventsProps) => {
             <div className="flex">
               <div className="w-48 h-32 relative">
                 <Image
-                  src={event.image}
+                  src={event.image || ""}
                   alt={event.title}
                   fill
                   className="object-cover"
