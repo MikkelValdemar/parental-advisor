@@ -1,0 +1,29 @@
+"use client";
+
+import React from "react";
+import { useTranslation } from "react-i18next";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const CafesPage = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="flex flex-col min-h-screen bg-[var(--color-background)]">
+      <Header />
+      <div className="flex-1 container mx-auto px-4 py-8 mt-16">
+        <h1 className="text-3xl font-bold mb-8 text-[var(--color-text-primary)]">
+          {t("cafes.title")}
+        </h1>
+
+        {/* Content */}
+        <div className="text-center py-12 text-[var(--color-text-secondary)]">
+          {t("cafes.comingSoon")}
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default CafesPage;
