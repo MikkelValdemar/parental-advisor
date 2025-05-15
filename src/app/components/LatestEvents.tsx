@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 import { Event } from "../data/mockData";
 import "../styles/theme.css";
 
@@ -20,10 +21,12 @@ const LatestEvents = ({ events }: LatestEventsProps) => {
           <div key={event.id} className="group">
             <div className="flex">
               <div className="w-48 h-32 relative">
-                <img
+                <Image
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-4 flex-1">

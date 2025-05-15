@@ -1,5 +1,3 @@
-import { popularPlaygrounds } from "@/app/data/mockData";
-
 export default {
   navigation: {
     events: "Begivenheder",

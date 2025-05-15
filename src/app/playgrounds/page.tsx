@@ -32,16 +32,14 @@ const PlaygroundsPage = () => {
         </section>
 
         {/* District Sections */}
-        {Object.entries(districtPlaygrounds).map(
-          ([district, playgrounds], index) => (
-            <section key={district} className="mb-12">
-              <h2 className="text-2xl font-bold mb-6 text-[var(--color-text-primary)]">
-                {district}
-              </h2>
-              <PlaygroundList playgrounds={playgrounds} />
-            </section>
-          )
-        )}
+        {Object.entries(districtPlaygrounds).map(([district, playgrounds]) => (
+          <section key={district} className="mb-12">
+            <h2 className="text-2xl font-bold mb-6 text-[var(--color-text-primary)]">
+              {district}
+            </h2>
+            <PlaygroundList playgrounds={playgrounds} />
+          </section>
+        ))}
       </div>
       <Footer />
     </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
@@ -10,8 +9,6 @@ import PopularEvents from "./components/PopularEvents";
 import { latestEvents, popularEvents } from "./data/mockData";
 
 const Home = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="min-h-screen bg-[#FFF5E6] text-[#2D3047]">
       <Header />

@@ -15,7 +15,7 @@ const HeroSection = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
